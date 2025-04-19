@@ -1,6 +1,7 @@
 import { Injectable, signal } from '@angular/core';
 import { toObservable } from "@angular/core/rxjs-interop";
 import { Book } from '../../core/models/Book.model';
+import { map } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -8,7 +9,7 @@ export class MyRessourceServiceService {
 
   
 
-  collection: Book[] = [
+  books = signal<Book[]>([
     {
       id: 1,
       titre: "Le Voyage d'Arion",
@@ -99,13 +100,24 @@ export class MyRessourceServiceService {
       codeGenre: "0780",
       codeLot: 201
     }
-  ]
+  ])
 
 
 
 // simulate real http service
   findAll() {
-    const signalBooks = signal(this.collection)
-   const values =  toObservable<Book[]>(signalBooks);
+    return toObservable<Book[]>(this.books);  
+  }
+
+  findByMonth(dto: Partial<Book>) {
+    return toObservable(this.books).pipe(
+      map((bs) => {
+        return bs.filter(
+          (b) => b.codeGenre === dto.codeGenre &&
+            b.datePublication.getMonth() === dto.datePublication?.getMonth() &&
+            b.datePublication.getFullYear() === dto.datePublication?.getFullYear()
+        )
+      })
+    )
   }
 }
