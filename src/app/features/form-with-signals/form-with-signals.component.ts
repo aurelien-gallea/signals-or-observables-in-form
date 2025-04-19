@@ -23,7 +23,7 @@ export class FormWithSignalsComponent {
   setPreviousCode = () => this.previousCode = this.code();
   setPreviousDate = () => this.previousDate = this.date();
   //observer
-  readonly shouldFetchNumber = effect(() => {
+  readonly shouldFetchNumber = computed(() => {
     const refreshNeeded = (this.code() !== this.previousCode ||
                          this.date() !== this.previousDate)
     if(refreshNeeded) {
