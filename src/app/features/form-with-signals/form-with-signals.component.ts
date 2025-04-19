@@ -48,9 +48,8 @@ export class FormWithSignalsComponent implements OnInit {
     }
 
     // renvoie un tableau
-    this.myService.findByMonth(dto).pipe(
-      delay(300)
-    ).subscribe( {
+    this.myService.findByMonth(dto)
+    .subscribe( {
       next: (p)=>
         {
         this.number.set(p.length > 0 ? p[0].codeLot : null)
