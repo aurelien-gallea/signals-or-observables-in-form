@@ -14,8 +14,8 @@ export class MyRessourceServiceService {
       titre: "Le Voyage d'Arion",
       auteur: "Jean Dupont",
       nombrePages: 320,
-      datePublication: new Date("2023-06-12"),
-      categorie: "0460",
+      datePublication: new Date("2024-03-05"),
+      codeGenre: "0460",
       codeLot: 101
     },
     {
@@ -23,26 +23,26 @@ export class MyRessourceServiceService {
       titre: "Les Secrets de l'Univers",
       auteur: "Claire Martin",
       nombrePages: 215,
-      datePublication: new Date("2024-01-22"),
-      categorie: "0780",
-      codeLot: 202
+      datePublication: new Date("2024-04-10"),
+      codeGenre: "0460",
+      codeLot: 102
     },
     {
       id: 3,
       titre: "Échos du passé",
       auteur: "Marc Leclerc",
       nombrePages: 198,
-      datePublication: new Date("2023-06-18"),
-      categorie: "0460",
-      codeLot: 101
+      datePublication: new Date("2024-03-18"),
+      codeGenre: "0780",
+      codeLot: 201
     },
     {
       id: 4,
       titre: "La Dernière Porte",
       auteur: "Sophie Garnier",
       nombrePages: 450,
-      datePublication: new Date("2024-01-17"),
-      categorie: "0780",
+      datePublication: new Date("2024-04-02"),
+      codeGenre: "0780",
       codeLot: 202
     },
     {
@@ -50,8 +50,8 @@ export class MyRessourceServiceService {
       titre: "Horizons Lointains",
       auteur: "Luc Moreau",
       nombrePages: 275,
-      datePublication: new Date("2023-06-25"),
-      categorie: "0460",
+      datePublication: new Date("2024-03-21"),
+      codeGenre: "0460",
       codeLot: 101
     },
     {
@@ -59,8 +59,8 @@ export class MyRessourceServiceService {
       titre: "Code et Magie",
       auteur: "Emma Lefèvre",
       nombrePages: 380,
-      datePublication: new Date("2024-01-05"),
-      categorie: "0780",
+      datePublication: new Date("2024-04-20"),
+      codeGenre: "0780",
       codeLot: 202
     },
     {
@@ -68,26 +68,26 @@ export class MyRessourceServiceService {
       titre: "La Forêt d'Argent",
       auteur: "Nicolas Robert",
       nombrePages: 290,
-      datePublication: new Date("2023-06-07"),
-      categorie: "0460",
-      codeLot: 101
+      datePublication: new Date("2024-04-12"),
+      codeGenre: "0460",
+      codeLot: 102
     },
     {
       id: 8,
       titre: "Mémoires d’un Hacker",
       auteur: "Alice Bernard",
       nombrePages: 310,
-      datePublication: new Date("2024-01-01"),
-      categorie: "0780",
-      codeLot: 202
+      datePublication: new Date("2024-03-01"),
+      codeGenre: "0780",
+      codeLot: 201
     },
     {
       id: 9,
       titre: "Lumières du Nord",
       auteur: "Thomas Renault",
       nombrePages: 240,
-      datePublication: new Date("2023-06-29"),
-      categorie: "0460",
+      datePublication: new Date("2024-03-25"),
+      codeGenre: "0460",
       codeLot: 101
     },
     {
@@ -95,9 +95,9 @@ export class MyRessourceServiceService {
       titre: "Le Chant des Étoiles",
       auteur: "Juliette Fontaine",
       nombrePages: 260,
-      datePublication: new Date("2024-01-08"),
-      categorie: "0780",
-      codeLot: 202
+      datePublication: new Date("2024-03-15"),
+      codeGenre: "0780",
+      codeLot: 201
     }
   ]
 

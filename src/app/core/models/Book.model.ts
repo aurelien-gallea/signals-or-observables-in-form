@@ -5,7 +5,7 @@ export interface Book {
     auteur: string;
     nombrePages: number;
     datePublication: Date;
-    categorie: string;
+    codeGenre: string;
     codeLot: number;
     
 }
