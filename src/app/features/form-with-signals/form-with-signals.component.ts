@@ -1,4 +1,4 @@
-import { Component, computed, effect, inject, OnInit, signal, WritableSignal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject, OnInit, signal, WritableSignal } from '@angular/core';
 import { MyRessourceServiceService } from '../../services/http/my-ressource-service.service';
 import { Book } from '../../core/models/Book.model';
 import { delay, distinctUntilChanged, tap } from 'rxjs';
@@ -8,7 +8,8 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-form-with-signals',
   imports: [FormsModule],
   templateUrl: './form-with-signals.component.html',
-  styleUrl: './form-with-signals.component.scss'
+  styleUrl: './form-with-signals.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FormWithSignalsComponent implements OnInit {
 
