@@ -1,17 +1,23 @@
 <div class="container">
     <div>
         <label for="codeGenre">code genre </label>
-        <select name="codeGenre" id="codeGenre" [(ngModel)]="code">
+        <select name="codeGenre" id="codeGenre" [(ngModel)]="code" 
+        (ngModelChange)="onHandleChange()"
+        >
             <option value="0460">0460</option>
             <option value="0780">0780</option>
         </select>
     </div>
     <div>
         <label for="date">date de publication </label>
-        <input type="month" name="date" id="date" [(ngModel)]="date">
+        <input type="month" name="date" id="date" [(ngModel)]="date" 
+        (ngModelChange)="onHandleChange()"
+        >
     </div>
     <div>
         <label for="lot">numéro de lot </label>
-        <input type="number" name="lot" id="lot"[(ngModel)]="number">
+        <input type="number" name="lot" id="lot"[(ngModel)]="number"
+        (ngModelChange)="onHandleInput()"
+        >
     </div>
 </div>
