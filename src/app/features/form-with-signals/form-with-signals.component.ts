@@ -1,4 +1,4 @@
-import { Component, computed, effect, inject, signal, WritableSignal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject, signal, WritableSignal } from '@angular/core';
 import { Book } from '../../core/models/Book.model';
 import { MyRessourceServiceService } from '../../services/http/my-ressource-service.service';
 import { tap } from 'rxjs';
@@ -8,7 +8,8 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-form-with-signals',
   imports: [FormsModule],
   templateUrl: './form-with-signals.component.html',
-  styleUrl: './form-with-signals.component.scss'
+  styleUrl: './form-with-signals.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FormWithSignalsComponent {
 
@@ -22,7 +23,7 @@ export class FormWithSignalsComponent {
   setPreviousCode = () => this.previousCode = this.code();
   setPreviousDate = () => this.previousDate = this.date();
   //observer
-  readonly shouldFetchNumber = computed(() => {
+  readonly shouldFetchNumber = effect(() => {
     const refreshNeeded = (this.code() !== this.previousCode ||
                          this.date() !== this.previousDate)
     if(refreshNeeded) {
