@@ -15,7 +15,7 @@ export class MyRessourceServiceService {
       titre: "Le Voyage d'Arion",
       auteur: "Jean Dupont",
       nombrePages: 320,
-      datePublication: new Date("2024-03-05"),
+      datePublication: new Date("2025-03-05"),
       codeGenre: "0460",
       codeLot: 101
     },
@@ -24,7 +24,7 @@ export class MyRessourceServiceService {
       titre: "Les Secrets de l'Univers",
       auteur: "Claire Martin",
       nombrePages: 215,
-      datePublication: new Date("2024-04-10"),
+      datePublication: new Date("2025-04-10"),
       codeGenre: "0460",
       codeLot: 102
     },
@@ -33,7 +33,7 @@ export class MyRessourceServiceService {
       titre: "Échos du passé",
       auteur: "Marc Leclerc",
       nombrePages: 198,
-      datePublication: new Date("2024-03-18"),
+      datePublication: new Date("2025-03-18"),
       codeGenre: "0780",
       codeLot: 201
     },
@@ -42,7 +42,7 @@ export class MyRessourceServiceService {
       titre: "La Dernière Porte",
       auteur: "Sophie Garnier",
       nombrePages: 450,
-      datePublication: new Date("2024-04-02"),
+      datePublication: new Date("2025-04-02"),
       codeGenre: "0780",
       codeLot: 202
     },
@@ -51,7 +51,7 @@ export class MyRessourceServiceService {
       titre: "Horizons Lointains",
       auteur: "Luc Moreau",
       nombrePages: 275,
-      datePublication: new Date("2024-03-21"),
+      datePublication: new Date("2025-03-21"),
       codeGenre: "0460",
       codeLot: 101
     },
@@ -60,7 +60,7 @@ export class MyRessourceServiceService {
       titre: "Code et Magie",
       auteur: "Emma Lefèvre",
       nombrePages: 380,
-      datePublication: new Date("2024-04-20"),
+      datePublication: new Date("2025-04-20"),
       codeGenre: "0780",
       codeLot: 202
     },
@@ -69,7 +69,7 @@ export class MyRessourceServiceService {
       titre: "La Forêt d'Argent",
       auteur: "Nicolas Robert",
       nombrePages: 290,
-      datePublication: new Date("2024-04-12"),
+      datePublication: new Date("2025-04-12"),
       codeGenre: "0460",
       codeLot: 102
     },
@@ -78,7 +78,7 @@ export class MyRessourceServiceService {
       titre: "Mémoires d’un Hacker",
       auteur: "Alice Bernard",
       nombrePages: 310,
-      datePublication: new Date("2024-03-01"),
+      datePublication: new Date("2025-03-01"),
       codeGenre: "0780",
       codeLot: 201
     },
@@ -87,7 +87,7 @@ export class MyRessourceServiceService {
       titre: "Lumières du Nord",
       auteur: "Thomas Renault",
       nombrePages: 240,
-      datePublication: new Date("2024-03-25"),
+      datePublication: new Date("2025-03-25"),
       codeGenre: "0460",
       codeLot: 101
     },
@@ -96,7 +96,7 @@ export class MyRessourceServiceService {
       titre: "Le Chant des Étoiles",
       auteur: "Juliette Fontaine",
       nombrePages: 260,
-      datePublication: new Date("2024-03-15"),
+      datePublication: new Date("2025-03-15"),
       codeGenre: "0780",
       codeLot: 201
     }
