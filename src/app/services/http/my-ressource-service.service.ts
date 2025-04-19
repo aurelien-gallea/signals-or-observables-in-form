@@ -1,7 +1,7 @@
 import { inject, Injectable, signal } from '@angular/core';
 import { toObservable } from "@angular/core/rxjs-interop";
 import { Book } from '../../core/models/Book.model';
-import { map, Observable } from 'rxjs';
+import { delay, map, Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -118,7 +118,8 @@ export class MyRessourceServiceService {
             b.datePublication.getMonth() === dto.datePublication?.getMonth() &&
             b.datePublication.getFullYear() === dto.datePublication?.getFullYear()
         )
-      })
+      }),
+      delay(300) // simulate http response
     )
   }
 
