@@ -1,7 +1,7 @@
-import { Injectable, signal } from '@angular/core';
+import { inject, Injectable, signal } from '@angular/core';
 import { toObservable } from "@angular/core/rxjs-interop";
 import { Book } from '../../core/models/Book.model';
-import { map } from 'rxjs';
+import { map, Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -103,14 +103,15 @@ export class MyRessourceServiceService {
   ])
 
 
-
-// simulate real http service
+  // simulate real http service
+  books$ = toObservable<Book[]>(this.books)
+  
   findAll() {
-    return toObservable<Book[]>(this.books);  
+    return this.books$;  
   }
 
   findByMonth(dto: Partial<Book>) {
-    return toObservable(this.books).pipe(
+    return this.books$.pipe(
       map((bs) => {
         return bs.filter(
           (b) => b.codeGenre === dto.codeGenre &&
@@ -120,4 +121,5 @@ export class MyRessourceServiceService {
       })
     )
   }
+
 }
